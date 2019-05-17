@@ -782,6 +782,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
 id time
 id title
 id titleDividerNoCustom
@@ -829,6 +830,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout linear_activity_layout
 layout list_head_layout
 layout list_item_layout
 layout notification_action

@@ -1,30 +1,32 @@
 package com.yuan.android_learning_collection;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import android.util.Log;
-import android.view.LayoutInflater;
-
 import android.view.View;
 import android.view.ViewGroup;
 
 import android.view.inputmethod.InputMethodManager;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.ListView;
 import android.widget.AdapterView;
 
+import com.yuan.android_learning_collection.Day02.LinearLayoutActivity;
+import com.yuan.android_learning_collection.Home.ListAdapter;
+import com.yuan.android_learning_collection.Home.ListModel;
+
 public class MainActivity extends AppCompatActivity {
 
     private ListView listView;
     private List<ListModel> dataArr = new ArrayList();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         //1、数据源
         {
+
             ListModel model = new ListModel("[1]LinearLayout","线性布局，示例演示","");
             dataArr.add(model);
 
@@ -89,9 +92,61 @@ public class MainActivity extends AppCompatActivity {
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    ListModel model = dataArr.get(position-1);
-                    Toast.makeText(MainActivity.this, "点击了" + model.getTitle(), Toast.LENGTH_SHORT).show();
+
+                    switch (position) {
+                        case 1:
+                            this.LinearLayoutTest();
+                            break;
+                        case 2:
+                            this.RelativeLayout();
+                            break;
+                        case 3:
+                            this.TableLayout();
+                            break;
+                        case 4:
+                            this.FrameLayout();
+                            break;
+                        case 5:
+                            this.GridLayout();
+                            break;
+                        case 6:
+                            this.AbsoluteLayout();
+                            break;
+
+                            default:
+                                ListModel model = dataArr.get(position-1);
+                                Toast.makeText(MainActivity.this, "点击了" + model.getTitle(), Toast.LENGTH_SHORT).show();
+                                break;
+
+                    }
                 }
+
+                private void LinearLayoutTest() {
+                    System.out.println("线性布局");
+                    Intent intent = new Intent(MainActivity.this, LinearLayoutActivity.class);
+                    startActivity(intent);
+                }
+
+                private void RelativeLayout() {
+                    System.out.println("相对布局");
+                }
+
+                private void TableLayout() {
+                    System.out.println("表格布局");
+                }
+
+                private void FrameLayout() {
+                    System.out.println("帧布局");
+                }
+
+                private void GridLayout() {
+                    System.out.println("网格布局");
+                }
+
+                private void AbsoluteLayout() {
+                    System.out.println("绝对布局");
+                }
+
             });
         }
     }

@@ -1,4 +1,4 @@
-package com.yuan.android_learning_collection;
+package com.yuan.android_learning_collection.Home;
 
 public class ListModel {
 

@@ -1,4 +1,4 @@
-package com.yuan.android_learning_collection;
+package com.yuan.android_learning_collection.Home;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.yuan.android_learning_collection.R;
 
 import java.util.List;
 
