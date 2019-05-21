@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TableRow>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#24E4AC"
+                android:text="左上角"/>
+            <TextView android:layout_weight="1"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#7424E4"
+                android:text="右上角"
+                android:gravity="right"/>
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#E91E63"
+                android:text="中间"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#91D54D"
+                android:text="左下角"
+                android:gravity="left|bottom"/>
+            <TextView android:layout_weight="1"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#03A9F4"
+                android:text="右下角"
+                android:gravity="right|bottom"/>
+        </TableRow>
+
+</TableLayout>

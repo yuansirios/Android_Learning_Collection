@@ -19,6 +19,8 @@ import android.widget.ListView;
 import android.widget.AdapterView;
 
 import com.yuan.android_learning_collection.Day02.LinearLayoutActivity;
+import com.yuan.android_learning_collection.Day02.RelativeLayoutActivity;
+import com.yuan.android_learning_collection.Day02.TableLayoutActivity;
 import com.yuan.android_learning_collection.Home.ListAdapter;
 import com.yuan.android_learning_collection.Home.ListModel;
 
@@ -129,10 +131,14 @@ public class MainActivity extends AppCompatActivity {
 
                 private void RelativeLayout() {
                     System.out.println("相对布局");
+                    Intent intent = new Intent(MainActivity.this, RelativeLayoutActivity.class);
+                    startActivity(intent);
                 }
 
                 private void TableLayout() {
                     System.out.println("表格布局");
+                    Intent intent = new Intent(MainActivity.this, TableLayoutActivity.class);
+                    startActivity(intent);
                 }
 
                 private void FrameLayout() {

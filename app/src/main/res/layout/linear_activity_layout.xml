@@ -4,12 +4,63 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
+    <!--上面-->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FF1199"
+            android:text="左上角" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#21D19A"
+                android:gravity="right"
+            android:text="右上角" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--中间-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:background="#FFFFFF"
-        android:text="LinearLayout" />
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#2959D3"
+            android:gravity="center"
+            android:text="中间" />
+    </LinearLayout>
+
+    <!--下面-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#76D532"
+            android:text="左下角"
+            android:gravity="left|bottom"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#BD4CD1"
+                android:gravity="right|bottom"
+                android:text="右下角" />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

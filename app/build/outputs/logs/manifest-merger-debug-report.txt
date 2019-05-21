@@ -85,9 +85,17 @@ ADDED from /Users/yuan/Documents/Android/Projects/Android_Learning_Collection/ap
 	android:name
 		ADDED from /Users/yuan/Documents/Android/Projects/Android_Learning_Collection/app/src/main/AndroidManifest.xml:16:27-74
 activity#com.yuan.android_learning_collection.Day02.LinearLayoutActivity
-ADDED from /Users/yuan/Documents/Android/Projects/Android_Learning_Collection/app/src/main/AndroidManifest.xml:19:9-21:20
+ADDED from /Users/yuan/Documents/Android/Projects/Android_Learning_Collection/app/src/main/AndroidManifest.xml:19:9-73
 	android:name
 		ADDED from /Users/yuan/Documents/Android/Projects/Android_Learning_Collection/app/src/main/AndroidManifest.xml:19:19-61
+activity#com.yuan.android_learning_collection.Day02.RelativeLayoutActivity
+ADDED from /Users/yuan/Documents/Android/Projects/Android_Learning_Collection/app/src/main/AndroidManifest.xml:20:9-75
+	android:name
+		ADDED from /Users/yuan/Documents/Android/Projects/Android_Learning_Collection/app/src/main/AndroidManifest.xml:20:19-63
+activity#com.yuan.android_learning_collection.Day02.TableLayoutActivity
+ADDED from /Users/yuan/Documents/Android/Projects/Android_Learning_Collection/app/src/main/AndroidManifest.xml:21:9-72
+	android:name
+		ADDED from /Users/yuan/Documents/Android/Projects/Android_Learning_Collection/app/src/main/AndroidManifest.xml:21:19-60
 uses-sdk
 INJECTED from /Users/yuan/Documents/Android/Projects/Android_Learning_Collection/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/yuan/Documents/Android/Projects/Android_Learning_Collection/app/src/main/AndroidManifest.xml

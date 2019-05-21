@@ -25,9 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.yuan.android_learning_collection.Day02.LinearLayoutActivity" >
-        </activity>
->
+        <activity android:name="com.yuan.android_learning_collection.Day02.LinearLayoutActivity" />
+        <activity android:name="com.yuan.android_learning_collection.Day02.RelativeLayoutActivity" />
+        <activity android:name="com.yuan.android_learning_collection.Day02.TableLayoutActivity" />
     </application>
 
 </manifest>
