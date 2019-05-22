@@ -18,7 +18,9 @@ import android.widget.Toast;
 import android.widget.ListView;
 import android.widget.AdapterView;
 
+import com.yuan.android_learning_collection.Layout.AbsolutLayoutActivity;
 import com.yuan.android_learning_collection.Layout.FrameLayoutActivity;
+import com.yuan.android_learning_collection.Layout.GridLayoutActivity;
 import com.yuan.android_learning_collection.Layout.LinearLayoutActivity;
 import com.yuan.android_learning_collection.Layout.RelativeLayoutActivity;
 import com.yuan.android_learning_collection.Layout.TableLayoutActivity;
@@ -150,10 +152,14 @@ public class MainActivity extends AppCompatActivity {
 
                 private void GridLayout() {
                     System.out.println("网格布局");
+                    Intent intent = new Intent(MainActivity.this, GridLayoutActivity.class);
+                    startActivity(intent);
                 }
 
                 private void AbsoluteLayout() {
                     System.out.println("绝对布局");
+                    Intent intent = new Intent(MainActivity.this, AbsolutLayoutActivity.class);
+                    startActivity(intent);
                 }
 
             });

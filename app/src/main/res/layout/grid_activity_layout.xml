@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="2"
+    android:rowCount="3">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FF1199"
+        android:text="左上角" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#21D19A"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:text="右上角" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+        android:layout_rowWeight="1"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="#2959D3"
+            android:gravity="center"
+            android:text="中间" />
+    </GridLayout>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#76D532"
+        android:text="左下角"
+        android:gravity="left|bottom"
+        android:layout_gravity="left|bottom"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#BD4CD1"
+        android:gravity="right|bottom"
+        android:layout_gravity="right|bottom"
+        android:text="右下角" />
+
+</GridLayout>
