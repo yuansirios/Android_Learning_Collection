@@ -1,4 +1,4 @@
-package com.yuan.android_learning_collection.Day02;
+package com.yuan.android_learning_collection.Layout;
 
 import android.app.Activity;
 import android.os.Bundle;

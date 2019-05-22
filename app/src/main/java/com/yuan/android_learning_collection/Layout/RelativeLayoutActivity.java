@@ -1,14 +1,14 @@
-package com.yuan.android_learning_collection.Day02;
+package com.yuan.android_learning_collection.Layout;
 
 import android.app.Activity;
 import android.os.Bundle;
 
 import com.yuan.android_learning_collection.R;
 
-public class LinearLayoutActivity extends Activity {
+public class RelativeLayoutActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.linear_activity_layout);
+        setContentView(R.layout.relative_activity_layout);
     }
 }

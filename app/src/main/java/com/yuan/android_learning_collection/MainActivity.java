@@ -18,9 +18,10 @@ import android.widget.Toast;
 import android.widget.ListView;
 import android.widget.AdapterView;
 
-import com.yuan.android_learning_collection.Day02.LinearLayoutActivity;
-import com.yuan.android_learning_collection.Day02.RelativeLayoutActivity;
-import com.yuan.android_learning_collection.Day02.TableLayoutActivity;
+import com.yuan.android_learning_collection.Layout.FrameLayoutActivity;
+import com.yuan.android_learning_collection.Layout.LinearLayoutActivity;
+import com.yuan.android_learning_collection.Layout.RelativeLayoutActivity;
+import com.yuan.android_learning_collection.Layout.TableLayoutActivity;
 import com.yuan.android_learning_collection.Home.ListAdapter;
 import com.yuan.android_learning_collection.Home.ListModel;
 
@@ -143,6 +144,8 @@ public class MainActivity extends AppCompatActivity {
 
                 private void FrameLayout() {
                     System.out.println("帧布局");
+                    Intent intent = new Intent(MainActivity.this, FrameLayoutActivity.class);
+                    startActivity(intent);
                 }
 
                 private void GridLayout() {

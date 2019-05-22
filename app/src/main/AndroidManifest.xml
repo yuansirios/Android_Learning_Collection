@@ -16,9 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Day02.LinearLayoutActivity"></activity>
-        <activity android:name=".Day02.RelativeLayoutActivity"></activity>
-        <activity android:name=".Day02.TableLayoutActivity"></activity>
+        <activity android:name=".Layout.LinearLayoutActivity"></activity>
+        <activity android:name=".Layout.RelativeLayoutActivity"></activity>
+        <activity android:name=".Layout.TableLayoutActivity"></activity>
+        <activity android:name=".Layout.FrameLayoutActivity"></activity>
     </application>
 
 </manifest>
