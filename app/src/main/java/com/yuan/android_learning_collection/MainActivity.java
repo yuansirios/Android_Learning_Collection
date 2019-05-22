@@ -5,6 +5,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +29,7 @@ import com.yuan.android_learning_collection.Layout.RelativeLayoutActivity;
 import com.yuan.android_learning_collection.Layout.TableLayoutActivity;
 import com.yuan.android_learning_collection.Home.ListAdapter;
 import com.yuan.android_learning_collection.Home.ListModel;
+import com.yuan.android_learning_collection.ListView.DynHeightListActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
 
             ListModel model5 = new ListModel("[6]AbsoluteLayout","绝对布局，示例演示","");
             dataArr.add(model5);
+
+            ListModel model6 = new ListModel("[7]ListView动态行高","示例演示","");
+            dataArr.add(model6);
         }
 
 
@@ -97,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
                     switch (position) {
                         case 1:
                             this.LinearLayoutTest();
@@ -116,6 +122,9 @@ public class MainActivity extends AppCompatActivity {
                             break;
                         case 6:
                             this.AbsoluteLayout();
+                            break;
+                        case 7:
+                            this.dynHeight();
                             break;
 
                             default:
@@ -159,6 +168,12 @@ public class MainActivity extends AppCompatActivity {
                 private void AbsoluteLayout() {
                     System.out.println("绝对布局");
                     Intent intent = new Intent(MainActivity.this, AbsolutLayoutActivity.class);
+                    startActivity(intent);
+                }
+
+                private void dynHeight() {
+                    System.out.println("动态行高");
+                    Intent intent = new Intent(MainActivity.this, DynHeightListActivity.class);
                     startActivity(intent);
                 }
 
