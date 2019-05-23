@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import java.lang.reflect.Array;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +20,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.AdapterView;
+import android.widget.TextView;
 
 import com.yuan.android_learning_collection.Layout.AbsolutLayoutActivity;
 import com.yuan.android_learning_collection.Layout.FrameLayoutActivity;
@@ -28,6 +31,7 @@ import com.yuan.android_learning_collection.Layout.TableLayoutActivity;
 import com.yuan.android_learning_collection.Home.ListAdapter;
 import com.yuan.android_learning_collection.Home.ListModel;
 import com.yuan.android_learning_collection.ListView.DynHeightListActivity;
+import com.yuan.android_learning_collection.TextView.TextViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
         //1、数据源
         {
-
             ListModel model = new ListModel("[1]LinearLayout","线性布局，示例演示","LinearLayout");
             dataArr.add(model);
 
@@ -63,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
 
             ListModel model6 = new ListModel("[7]ListView动态行高","示例演示","dynHeight");
             dataArr.add(model6);
+
+            ListModel model7 = new ListModel("[8]TextView详解","示例演示","textView");
+            dataArr.add(model7);
         }
 
 
@@ -157,6 +163,12 @@ public class MainActivity extends AppCompatActivity {
                 public void dynHeight() {
                     System.out.println("动态行高");
                     Intent intent = new Intent(MainActivity.this, DynHeightListActivity.class);
+                    startActivity(intent);
+                }
+
+                public void textView(){
+                    System.out.println("textView示例");
+                    Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
                     startActivity(intent);
                 }
             });
