@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,14 +17,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Layout.LinearLayoutActivity"></activity>
-        <activity android:name=".Layout.RelativeLayoutActivity"></activity>
-        <activity android:name=".Layout.TableLayoutActivity"></activity>
-        <activity android:name=".Layout.FrameLayoutActivity"></activity>
-        <activity android:name=".Layout.GridLayoutActivity"></activity>
-        <activity android:name=".Layout.AbsolutLayoutActivity"></activity>
-        <activity android:name=".ListView.DynHeightListActivity"></activity>
-        <activity android:name=".TextView.TextViewActivity"></activity>
+        <activity android:name=".Layout.LinearLayoutActivity" />
+        <activity android:name=".Layout.RelativeLayoutActivity" />
+        <activity android:name=".Layout.TableLayoutActivity" />
+        <activity android:name=".Layout.FrameLayoutActivity" />
+        <activity android:name=".Layout.GridLayoutActivity" />
+        <activity android:name=".Layout.AbsolutLayoutActivity" />
+        <activity android:name=".ListView.DynHeightListActivity" />
+        <activity android:name=".TextView.TextViewActivity" />
+        <activity android:name=".EditText.EditTextActivity" />
     </application>
 
 </manifest>

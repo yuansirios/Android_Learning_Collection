@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="文本最大显示三行"
+        android:maxLines="3"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="只允许输入手机号"
+        android:inputType="phone"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="自定义光标颜色"
+        android:textCursorDrawable="@drawable/edittext_cursor_color"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="取消背景颜色"
+        android:background="@null"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="自定义主题修改下划线"
+        android:theme="@style/editText"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="自定义EditText下划线1"
+        android:singleLine="true"
+        android:background="@null"
+        />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="自定义EditText下划线2"
+        android:singleLine="true"
+        android:background="@null"
+        />
+
+</LinearLayout>

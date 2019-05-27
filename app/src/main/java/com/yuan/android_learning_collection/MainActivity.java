@@ -22,6 +22,7 @@ import android.widget.ListView;
 import android.widget.AdapterView;
 import android.widget.TextView;
 
+import com.yuan.android_learning_collection.EditText.EditTextActivity;
 import com.yuan.android_learning_collection.Layout.AbsolutLayoutActivity;
 import com.yuan.android_learning_collection.Layout.FrameLayoutActivity;
 import com.yuan.android_learning_collection.Layout.GridLayoutActivity;
@@ -69,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
 
             ListModel model7 = new ListModel("[8]TextView详解","示例演示","textView");
             dataArr.add(model7);
+
+            ListModel model8 = new ListModel("[9]EditText详解","示例演示","editText");
+            dataArr.add(model8);
         }
 
 
@@ -171,6 +175,13 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this, TextViewActivity.class);
                     startActivity(intent);
                 }
+
+                public void editText(){
+                    System.out.println("editText示例");
+                    Intent intent = new Intent(MainActivity.this, EditTextActivity.class);
+                    startActivity(intent);
+                }
+
             });
         }
     }
